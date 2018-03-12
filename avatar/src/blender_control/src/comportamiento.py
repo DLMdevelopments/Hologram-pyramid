@@ -3,6 +3,7 @@
 import rospy
 import yaml
 import optparse
+import os
 
 from optparse import OptionParser
 from avatar_msg.msg import expresion
@@ -18,7 +19,9 @@ def play_movie():
     txt = args[0]
 
   # carga archivo yaml
-  file_input = '/home/david/avatar/src/blender_control/behavior/' + txt
+  os.chdir("..")
+  directory = os.getcwd()
+  file_input = directory + '/behavior/' + txt
   stream = open(file_input)
   data = yaml.load(stream)
   stream.close()
