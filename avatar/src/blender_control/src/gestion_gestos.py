@@ -13,7 +13,7 @@ from avatar_msg.msg import expresion
 def handle_exp(req):
         # se llama el diccionario de gestos del archivo yaml
         global pub
-        stream = open('/home/david/avatar/src/blender_control/cfg/gestos.yaml')
+        stream = open('../cfg/gestos.yaml')
         data = yaml.load(stream)
         stream.close()
         # publica la expresion deseada
