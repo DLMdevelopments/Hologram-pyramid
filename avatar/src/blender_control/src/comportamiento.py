@@ -9,7 +9,7 @@ from optparse import OptionParser
 from avatar_msg.msg import expresion
 
 def play_movie():
-  # analiza los argumentos de entrada
+  # analyze the input arguments
   parser = OptionParser()
   (options, args) = parser.parse_args()
   
@@ -18,7 +18,7 @@ def play_movie():
   else:
     txt = args[0]
 
-  # carga archivo yaml
+  # upload yaml file
   os.chdir("..")
   directory = os.getcwd()
   file_input = directory + '/behavior/' + txt
@@ -27,7 +27,7 @@ def play_movie():
   stream.close()
   rospy.sleep(1.0)
 
-  # separa las secuencias
+  # separate the sequences
   for i in range(len(data)):
     a = data['esc_'+str(i)]
     ep = a['expresion']
