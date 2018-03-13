@@ -1,7 +1,7 @@
-# ARCHIVO DE CONFIGURACION DE GESTOS.
+# GESTURE COFIGURATION FILE
 
-# forma del vector de unidades de accion
-# aus: [unidad_de_accion_1, intensidad_1, unidad_de_accion_2, intensidad_2 ...]
+# vector form of action units
+# aus: [action_unit_1, intensity_1, action_unit_2, intensity_2 ...]
 
 ninguna_1:
     aus: []
