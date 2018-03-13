@@ -11,7 +11,7 @@ from avatar_msg.msg import AUlist
 from avatar_msg.msg import expresion
 
 def handle_exp(req):
-        # se llama el diccionario de gestos del archivo yaml
+        # call the gestures dictionary from yaml file
         global pub
         stream = open('../cfg/gestos.yaml')
         data = yaml.load(stream)
